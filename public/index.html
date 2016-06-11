@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HW18-MongoDB</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="//code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="public/css/style.css">
+
+<style>
+
+body {
+background:url('images/maxresdefault.jpg');
+background-size:100%;
+height: 140px;
+display:block;
+padding:0 !important;
+margin:0;
+}
+h1 {
+  font-size: 40px;
+  color:white;
+}
+.deleter{
+  color: red;
+  margin-left: 20px;
+}
+input{
+  width:400px;
+  margin:0 auto;
+  font-size: 42px;
+  height:50px;
+  background-color: antiquewhite;
+}
+textarea{
+  width:400px;
+  margin:0 auto;
+  height:400px;
+  font-size: 24px;
+  background-color: antiquewhite;
+
+}
+#dataentry{
+  cursor: pointer;
+  font-size: 24px;
+}
+#results{
+  background-color: antiquewhite;
+  width:400px;
+  overflow: auto;
+  margin: 0 auto;
+  height:200px;
+}
+#actionbutton{
+  display: inline-block;
+}
+#buttons{
+  margin:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+  <body>
+    <div class="container">
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <h3 class="text-muted"></h3>
+      </div>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>Your Articles</h1>
+              <!-- Example row of columns -->
+          <div class="row">
+            <div class="col-lg-4">
+              <h2>Articles 1</h2>
+              <p class="text-danger"></p>
+              <p></p>
+              <p><a class="btn btn-primary" href="#" role="button">View Articles I details &raquo;</a></p>
+            </div>
+            <div class="col-lg-4">
+              <h2>Articles 2</h2>
+              <p></p>
+              <p><a class="btn btn-primary" href="#" role="button">View Articles II details &raquo;</a></p>
+           </div>
+            <div class="col-lg-4">
+              <h2>Articles 3</h2>
+              <p></p>
+              <p><a class="btn btn-primary" href="#" role="button" align="center">View Articles III details &raquo;</a></p>
+            </div>
+          </div>        
+      </div>
+ 
+      <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="col-lg-6"> 
+
+                <div id="userinput">
+                    <p><strong>Comment on Your Articles</strong></p>
+                    <input type="text" id="title" />
+                    <br>   
+
+                  <div id="actionbutton">
+                      <button id="makenew">Submit</button>
+                  </div>                         
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+                    <p><strong>Comments</strong></p>
+                    <textarea id="comments" ></textarea>
+
+                <div id ="buttons">
+                   <button id="clearall">Delete All Comments</button>   
+                </div>  
+
+            </div>                                  
+
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+
+    <script src="/app.js"></script>
+  </body>
+</html>
+
